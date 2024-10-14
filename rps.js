@@ -65,7 +65,7 @@ function getHumanChoice()
 
 function playGame(){
   
-    for(let i=0;i<3;i++){ 
+    for(let i=0;i<5;i++){ 
 
     const humanchoice = getHumanChoice();
     const compchoice = getComputerChoice();

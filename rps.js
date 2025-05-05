@@ -27,40 +27,40 @@ function getHumanChoice()
 }
 
     
-    function playRound(compchoice,humanchoice)
-    {
-     let str = humanchoice.toUpperCase();
-    
-     if (str=="ROCK" && compchoice == "Paper")
-        {computerScore++
-           console.log("You lose! Paper beats Rock")
-        }
-     else if (str=="SCISSORS" && compchoice == "Rock")
-        {computerScore++
-            console.log("You lose! Rock beats Scissors")
-        }
-     else if (str=="PAPER" && compchoice == "Scissors")
-        {computerScore++
-            console.log("You lose! Scissors beat Paper")
-        }
-     else if (str=="SCISSORS" && compchoice == "Paper")
-        {humanScore++
-            console.log("You win! Scissors beat Rock")
-        }
-     else if (str=="PAPER" && compchoice == "Rock")
-        {humanScore++
-            console.log("You win! Paper beats Rock")
-        }
-     else if (str=="ROCK" && compchoice == "Scissors")
-        {humanScore++
-            console.log("You win! Rock beats Scissors")
-        }
-    else
-        {
-            console.log("Thats a nil!")
-        }
-    
+function playRound(compchoice,humanchoice)
+{
+    let str = humanchoice.toUpperCase();
+
+    if (str=="ROCK" && compchoice == "Paper")
+    {computerScore++
+        console.log("You lose! Paper beats Rock")
     }
+    else if (str=="SCISSORS" && compchoice == "Rock")
+    {computerScore++
+        console.log("You lose! Rock beats Scissors")
+    }
+    else if (str=="PAPER" && compchoice == "Scissors")
+    {computerScore++
+        console.log("You lose! Scissors beat Paper")
+    }
+    else if (str=="SCISSORS" && compchoice == "Paper")
+    {humanScore++
+        console.log("You win! Scissors beat Paper")
+    }
+    else if (str=="PAPER" && compchoice == "Rock")
+    {humanScore++
+        console.log("You win! Paper beats Rock")
+    }
+    else if (str=="ROCK" && compchoice == "Scissors")
+    {humanScore++
+        console.log("You win! Rock beats Scissors")
+    }
+else
+    {
+        console.log("Thats a draw!")
+    }
+
+}
 
 
 function playGame(){
@@ -81,3 +81,4 @@ function playGame(){
 
 }
 
+playGame()
